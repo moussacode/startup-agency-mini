@@ -251,6 +251,10 @@ ul{
     justify-content: center;
     flex-direction: column;
 }
+.cliste{
+    width: 100%;
+
+}
 
 .service-card {
     background-color: #fff; 
