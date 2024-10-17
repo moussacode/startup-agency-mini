@@ -16,18 +16,11 @@ body{
     color: #343D48;
     font-family: "DM Sans";
     line-height: 30px;
-    font-weight: normal;
-    
-    
-    
+    font-weight: normal;  
     
 }
 
 nav {
-   
-}
-
-.navbar {
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -40,7 +33,7 @@ nav {
     z-index: 1000; /* S'assure que le nav est au-dessus des autres éléments */
     background-color: #FFFFFF;
     
-    box-shadow: 0 0px 6px rgba(0, 0, 0, 0.1); 
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); 
 
 }
 
