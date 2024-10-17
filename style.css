@@ -24,12 +24,7 @@ body{
 }
 
 nav {
-    position: sticky;
-    top: 0;
-    z-index: 1000; /* S'assure que le nav est au-dessus des autres éléments */
-    background-color: #FFFFFF;
-    width: 100%;
-    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); 
+   
 }
 
 .navbar {
@@ -40,6 +35,13 @@ nav {
     max-width: 1230px;
     margin: 0 auto;
     padding: 15px 70px;
+    position: sticky;
+    top: 0;
+    z-index: 1000; /* S'assure que le nav est au-dessus des autres éléments */
+    background-color: #FFFFFF;
+    
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); 
+
 }
 
 .logo a {
