@@ -84,7 +84,7 @@ ul{
     border: 2px solid;
     border-color:  #8D448B;
     color:  #8D448B;
-    padding: 12px 24px;   
+    padding: 8px 24px;   
     font-weight: 700;
 }
 .buttonRegister:hover{
@@ -244,16 +244,6 @@ ul{
     grid-template-columns: repeat(auto-fill, minmax(200px, 1fr)); 
     gap: 16px; 
     padding: 16px; 
-}
-.sc2{
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    flex-direction: column;
-}
-.cliste{
-    width: 100%;
-
 }
 
 .service-card {
