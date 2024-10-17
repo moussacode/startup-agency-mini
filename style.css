@@ -245,6 +245,11 @@ ul{
     gap: 16px; 
     padding: 16px; 
 }
+.cliste{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
 
 .service-card {
     background-color: #fff; 
