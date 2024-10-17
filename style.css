@@ -54,7 +54,7 @@ ul{
     list-style-type: none;
 }
 .linksection {
-    font-size: 12px;
+    font-size: 16px;
     color: #02073E;
     font-weight: 400;
     cursor: pointer;
@@ -77,14 +77,14 @@ ul{
     min-width: 0;
     cursor: pointer;  
     transition: 500ms;
-    font-size: 12px;
+    font-size: 16px;
     margin-left: 8px;
     background-color: rgba(0, 0, 0, 0);
     border-radius: 5px;
     border: 2px solid;
     border-color:  #8D448B;
     color:  #8D448B;
-    padding: 12px 24px;   
+    padding: 8px 24px;   
     font-weight: 700;
 }
 .buttonRegister:hover{
