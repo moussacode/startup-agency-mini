@@ -21,22 +21,66 @@ body{
 }
 
 nav {
+
     display: flex;
     justify-content: space-between;
     align-items: center;
     width: 100%;
-   
     margin: 0 auto;
     padding: 15px 70px;
-    position: sticky;
+    position: fixed;
     top: 0;
     z-index: 1000;
-    /* background-color: #FFFFFF;
-    
-    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);  */
+ 
     background-color: #F6F8FB;
-    
+    transition: 500ms;
 
+}
+.navbar.sticky{
+    background-color: #FFFFFF; 
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); 
+  }
+.menu-humburger{
+    display: none;
+}
+.icon{
+    
+    
+    display: none;
+  }
+
+   .cancel-btn{
+    position: absolute;
+    right: 30px;
+    top: 20px;
+  }
+@media screen and (max-width: 940px) {
+    .buttonRegister {
+        display: none;
+    }
+    .navsection {
+        position: fixed;
+        top: 0;
+        left: -100%;
+        flex-direction: column;
+         height: 100vh;
+        width: 100%;
+        max-width: 400px;
+        padding: 30px 30px 40px;
+        text-align: left;
+        background: #ffffff;
+        transition: all 0.3s ease;
+    }
+    .navbar.show  .navsection {
+        left: 0%;
+    }
+    
+    .navbar .navsection li{
+        margin-top: 45px;
+      }
+    .icon{
+        display: block;
+    }
 }
 
 .logo a {
@@ -104,6 +148,7 @@ ul{
     padding-bottom: 50px;
     background-color: #F6F8FB;
     overflow: hidden;
+    
 }
 .section1 > div {
     flex: 1; 
