@@ -218,11 +218,10 @@ ul{
 .section2{
     padding-top: 50px;
     margin: 0;
-    min-width: 0;
+   
     width: 100%;
     
-    margin-left: auto;
-    margin-right: auto;
+    
     padding-left: 15px;
     padding-right: 15px;
 }
@@ -235,18 +234,19 @@ ul{
     text-align: center;
 }
 .titleSection2 p {
-    color: var(--theme-ui-colors-primary, #8D448B);
+    color: #8D448B;
     font-size: 15px;
     line-height: 1;
     margin-bottom: 10px;
 }
 .cardlist {
     display: grid;
-    grid-template-columns: repeat(auto-fill, minmax(200px, 1fr)); 
-    gap: 16px;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    grid-gap: 60px; 
+    
     padding: 16px;
-    justify-content: center; /* S'assure que le contenu de la grille est centré */
-    max-width: 1200px; /* Limite la largeur maximale pour éviter que la grille ne s'étende trop */
+    justify-content: center; 
+    
     margin: 0 auto; /
 }
 
