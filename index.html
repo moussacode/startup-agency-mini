@@ -29,7 +29,7 @@
                         <a href="#services"  class="linksection">Services</a>
                     </li>
                     <li>
-                        <a href="#Testimonials"  class="linksection">Testimonials</a>
+                        <a href="#testimonials"  class="linksection">Testimonials</a>
                     </li>
                     <li>
                         <a href="#news"  class="linksection">News</a>
@@ -59,7 +59,7 @@
                         <button type="submit" class="send">Subscribe</button>
                     </form>
                     <div class="sponsoreSec">
-                        <span class="sponsore">Sponsored by:</span>
+                        <span class="sponsore">Sponsored by:</span> 
                         <div class="sponsItem">
                             <img src="assets/téléchargement (1).png" alt="" srcset=""> </div>
                         <div class="sponsItem">
@@ -75,8 +75,9 @@
             </div>
 
         </section>
-        <section class="section2">
-            <div id="services" class="service">
+
+        <section class="section2" id="services">
+            <div  class="service">
                 <div class="css-14n8uox">
                     <div class="blockTitle titleSection2">
                         <p class="css-vurnku">Quality features</p>
@@ -146,10 +147,34 @@
 
                     </path></svg></a><div class="css-1fjoj8g">
                         <img src="assets/video-a5d739423c306df4e4aea6a860c9c6b2.png" width="1110" height="626" loading="lazy" alt="" class="css-9taffg">
-                        
-                        <a aria-label="video btn" class="css-npmkq8"><svg stroke="currentColor" fill="currentColor" stroke-width="0" viewBox="0 0 448 512" height="1em" width="1em" xmlns="http://www.w3.org/2000/svg">
-                            <path d="M424.4 214.7L72.4 6.6C43.8-10.3 0 6.1 0 47.9V464c0 37.5 40.7 60.1 72.4 41.3l352-208c31.4-18.5 31.5-64.1 0-82.6z"></path></svg></a></div>
+
+                        <a href="#" aria-label="video btn" class="css-npmkq8" id="video-btn">
+                            <svg stroke="currentColor" fill="currentColor" stroke-width="0" viewBox="0 0 448 512" height="1em" width="1em" xmlns="http://www.w3.org/2000/svg">
+                                <path d="M424.4 214.7L72.4 6.6C43.8-10.3 0 6.1 0 47.9V464c0 37.5 40.7 60.1 72.4 41.3l352-208c31.4-18.5 31.5-64.1 0-82.6z"></path>
+                            </svg>
+                        </a>
+                    
+                        <!-- La vidéo est cachée au départ -->
+                        <div id="youtube-video" style="display: none; position: absolute;">
+                            <iframe width="1110" height="626" src="https://www.youtube.com/embed/Cm3U-NgJb9I?si=OB4VMk6TEmIZwVPx" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                    
+                            <!-- Bouton de fermeture -->
+                            <button id="close-btn" style="position: absolute; top: 10px; right: 10px; background-color: red; color: white; border: none; padding: 10px; cursor: pointer;">
+                                Fermer
+                            </button>
                         </div>
+
+        </section>
+        <section id="testimonials" class="section5">
+
+            <div class="">
+                <div class="blockTitle titleSection2">
+                    <p class="css-vurnku">Customer Comments</p>
+                    <h2 class="css-czffb0">Why customers love us</h2>
+                </div>
+
+            </div>
+
         </section>
                     
         
@@ -174,6 +199,25 @@
     window.onscroll = ()=>{
         this.scrollY > 20 ? navbar.classList.add("sticky") : navbar.classList.remove("sticky");
     }
+
+    // Récupérer les éléments
+const videoBtn = document.getElementById('video-btn');
+const youtubeVideo = document.getElementById('youtube-video');
+const closeBtn = document.getElementById('close-btn');
+
+// Afficher la vidéo et cacher le bouton quand l'utilisateur clique sur l'icône
+videoBtn.addEventListener('click', function(event) {
+    event.preventDefault();
+    youtubeVideo.style.display = 'block';
+    videoBtn.style.display = 'none';
+});
+
+// Cacher la vidéo et réafficher le bouton quand l'utilisateur clique sur "Fermer"
+closeBtn.addEventListener('click', function() {
+    youtubeVideo.style.display = 'none';
+    videoBtn.style.display = 'block';
+});
+
     </script>
 </body>
 </html>
