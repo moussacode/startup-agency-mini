@@ -1138,28 +1138,23 @@ ul{
     .css-1w7s2j {
         max-width: 100%;
         display: flex;
-        font-size: 12px;
+        font-size: 10px;
         
     }
-    .css-1w7s2j a+a {
-        margin-left: 2px;
-    }
+   
     .ph2{
         display: none;
     }
 }
 
 .css-1w7s2j {
-
-    
     font-size: 16px;
     align-items: center;
     color: var(--theme-ui-colors-black, #0F2137);
+    gap:10px;
 
 }
-.css-1w7s2j a+a {
-    margin-left: 30px;
-}
+
 
 .css-1w7s2j a {
     
